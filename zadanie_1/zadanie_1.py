@@ -15,7 +15,7 @@ for x in range(7):
         # do listy lista_a jest dodany element o pseudolosowej wartości int włącznie między -2 a 2
         # https://docs.python.org/3/library/random.html
         lista_b.append(10/random.randint(-2, 2))
-    # w przypadku w linii 16 wystąpi ZeroDivisionError, do listy_b zostanie zamiast tego dodane 30.
+    # w przypadku gry w linii 16 wystąpi ZeroDivisionError, do listy_b zostanie zamiast tego dodane 30.
     except ZeroDivisionError:
         lista_b.append(30)
 print("lista_b: " + str(lista_b))
