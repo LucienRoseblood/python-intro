@@ -1,0 +1,13 @@
+math:
+Zawiera często używane funkcje matematyczne, np.: floor(x), log(x, base), sqrt(x), sin(x).
+O ile w opisie funkcji nie jest napisane inaczej, funkcje zwracają wartość float.
+https://docs.python.org/3/library/math.html
+
+random:
+Służy do generowania numerów pseudolosowych, głównie z użyciem funkcji random().
+https://docs.python.org/3/library/random.html
+
+time:
+Zawiera funkcje związane z datami i czasem, np.: time.time() - zwraca czas w sekundach od 01.01.1970, time.ctime(sec) - konwertuje czas w sekundach od 01.01.1970 na string, time.clock_gettime(clk_id) - zwraca czas konkretnego zegara.
+Operowanie na czasie przed 01.01.1970 (czas powstania Unixa, który jest punktem odniesienia dla funkcji) lub po 01.01.2038 (ze względu na rozmiar zmiennych) może być utrudnione lub niemożliwe.
+https://docs.python.org/3/library/time.html

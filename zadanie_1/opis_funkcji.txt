@@ -1,0 +1,15 @@
+zip:
+Łączy iteratory w iterator tupli, n-ta tupla zawiera n-te elementy z każdego iteratora.
+Domyślnie zatrzymuje się na n najmniejszego iteratora i ignoruje resztę danych.
+Może być również użyte w odwrotny sposób z użyciem operatora *.
+https://docs.python.org/3.3/library/functions.html#zip
+
+enumerate:
+Przyjmuje iterator i zwraca iterator tupli zawierający kolejny numer oraz n-ty element iteratora.
+Domyślnie zaczyna od 0, może być to zmienione argumentem start.
+https://docs.python.org/3.3/library/functions.html#enumerate
+
+sorted:
+Zwraca posortowaną listę z elementów przyjętego iteratora.
+Może przyjąć dodatkowe 2 argumenty, kolejno key którym można zmienić sposób porównywania elementów oraz reverse który odwraca kolejność.
+https://docs.python.org/3.3/library/functions.html#sorted

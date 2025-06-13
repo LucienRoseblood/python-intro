@@ -1,0 +1,7 @@
+valueerror:
+Operator lub funkcja otrzymuje zły typ wartości.
+https://docs.python.org/3/library/exceptions.html#ValueError
+
+zerodivisionerror:
+Próba dzielenia przez 0.
+https://docs.python.org/3/library/exceptions.html#ValueError
