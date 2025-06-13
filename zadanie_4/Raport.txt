@@ -1,0 +1,66 @@
+Dla danych:
+Alternatives (performance, feature count, power consumption, price): 
+[[75, 300, 5.5, 1000], 
+[60, 280, 6.0, 950], 
+[90, 320, 5.0, 1100], 
+[85, 310, 5.3, 1020], 
+[70, 290, 6.2, 980], 
+[95, 330, 4.9, 1150], 
+[65, 275, 5.8, 970], 
+[80, 305, 5.1, 1010], 
+[72, 295, 5.6, 990], 
+[88, 315, 5.0, 1080], 
+[68, 285, 6.1, 960], 
+[92, 325, 5.2, 1120]]
+Types:
+[1, 1, -1, -1]
+Weights:
+[0.3, 0.3, 0.2, 0.2]
+Bounds:
+[[  60.   100. ]
+ [ 270.   340. ]
+ [   4.5    6.5]
+ [ 900.  1200. ]]
+
+Program dał wynik:
+TOPSIS result:
+7.0 0.5037352403053272
+12.0 0.3172892023566688
+1.0 0.7086332291451346
+5.0 0.6731026709698683
+9.0 0.3611040401266053
+2.0 0.7010649155751746
+11.0 0.31750383568198454
+6.0 0.618645860221124
+8.0 0.44434682841779544
+4.0 0.6962951916916011
+10.0 0.3528993223966741
+3.0 0.6985550604310049
+SPOTIS result:
+6.0 0.5255952380952382
+1.0 0.7404761904761905
+10.0 0.34404761904761905
+8.0 0.4010714285714286
+4.0 0.6626190476190477
+12.0 0.28702380952380957
+2.0 0.7177380952380953
+7.0 0.4333333333333334
+5.0 0.572857142857143
+9.0 0.36714285714285716
+3.0 0.6757142857142857
+11.0 0.340952380952381
+
+Dla TOPSIS najwyższy wynik jest najlepszy:
+1.0 0.7086332291451346 dla [90, 320, 5.0, 1100]		(ten sam co 10.0 w SPOTIS)
+2.0 0.7010649155751746 dla [95, 330, 4.9, 1150] 	(ten sam co 12.0 w SPOTIS)
+3.0 0.6985550604310049 dla [92, 325, 5.2, 1120]		(ten sam co 11.0 w SPOTIS)
+
+za to dla SPOTIS najniższy wynik jest najlepszy:
+12.0 0.28702380952380957 dla [95, 330, 4.9, 1150] 	(ten sam co 2.0 w TOPSIS)
+11.0 0.340952380952381 dla [92, 325, 5.2, 1120] 	(ten sam co 3.0 w TOPSIS)
+10.0 0.34404761904761905 dla [90, 320, 5.0, 1100]	(ten sam co 1.0 w TOPSIS)
+
+Wyniki są różne ponieważ TOPSIS porównuje opcje między sobą, za to SPOTIS porównuje je jedynie do wyznaczonych granic.
+Oznacza to, że TOPSIS jest lepszy gdy liczy się wybranie opcji z najlepszym wynikiem, a SPOTIS kiedy najlepszy wynik ma być najbliższy do określonego celu.
+
+W wypadku tych danych (w kolumnach kolejno: performance, feature count, power consumption, price) lepiej użyć TOPSIS żeby zmaksymalizować dochody.
